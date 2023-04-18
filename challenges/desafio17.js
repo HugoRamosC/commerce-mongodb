@@ -1,9 +1,9 @@
-db.createCollection("resumoProdutos")
+db.createCollection("resumoProdutos");
 
 db.resumoProdutos.insertOne({
-  "franquia": "McDonalds",
-  "totalProdutos": db.produtos.countDocuments({}),
-})
+  franquia: "McDonalds",
+  totalProdutos: db.produtos.countDocuments({}),
+});
 
 db.resumoProdutos.find(
   {},
